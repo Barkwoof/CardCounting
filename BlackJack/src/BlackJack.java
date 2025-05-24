@@ -35,6 +35,7 @@ public class BlackJack {
     JPanel deckPanel = new JPanel();
     JTextField deckNum = new JTextField(16);
     JButton setDecks = new JButton("Set");
+    JTextArea points = new JTextArea(1, 5);
 
     BlackJack(){
         startGame();
@@ -59,6 +60,7 @@ public class BlackJack {
         setDecks.setFocusable(false);
         deckPanel.add(setDecks);
         deckPanel.add(deckNum);
+        deckPanel.add(points);
 
         frame.add(deckPanel, BorderLayout.NORTH);
     }
