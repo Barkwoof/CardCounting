@@ -26,8 +26,21 @@ public class Card {
 
     @Override
     public String toString() {
-        return value + "-" + type;
+        return value + type;
     }
+
+    public int getCountValue(){
+        if("AJQK10".contains(value)){ // ace jack ...
+            return 1;
+        }
+        if("2345".contains(value)){
+            return -1;
+        }
+        else{
+            return 0;
+        }
+    }
+
     public int getTrueValue(){
         if("AJQK".contains(value)){ // ace jack ...
             if(value == "A"){
@@ -44,5 +57,8 @@ public class Card {
     }
     public boolean isAce(){
         return value == "A";
+    }
+    public String getImagePath(){
+        return "./PNG/" + value + type + ".png";
     }
 }
