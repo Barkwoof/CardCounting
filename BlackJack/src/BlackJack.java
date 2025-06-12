@@ -206,6 +206,7 @@ public class BlackJack {
             public void actionPerformed(ActionEvent e) {
                 hitButton.setEnabled(false);
                 stayButton.setEnabled(false);
+                cardCount += hiddenCard.getCountValue();
 
                 while(dealerSum < 17){
                     Card card = deck.remove(deck.size() - 1);
