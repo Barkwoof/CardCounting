@@ -31,10 +31,10 @@ public class Card {
 
     public int getCountValue(){
         if("AJQK10".contains(value)){ // ace jack ...
-            return 1;
+            return -1;
         }
         if("2345".contains(value)){
-            return -1;
+            return 1;
         }
         else{
             return 0;
