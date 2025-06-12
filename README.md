@@ -1,1 +1,1 @@
-This project is intended to not only provide a visual gui for playing blackjack, it is also intended to give some help for counting cards. 
+This project is intended to not only provide a visual gui for playing blackjack, it is also intended to give some help for counting cards. Spesifically, this deck uses a ballanced count method, so if you  went through every card in the deck and added their "point" values, you would end up with zero. You can also set the number of decks you play with.
